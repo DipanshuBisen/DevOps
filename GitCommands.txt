@@ -90,3 +90,60 @@ It means now onwards if you want to push anything to github no need to use "orig
 it means we are telling that we are going to use this branch only
 
 
+
+
+Git Branches -------------> 
+
+What is branches 
+When two or more person work on same project and they want to make changes at same time then they are working with branches
+
+To see the list of branches 
+ 
+ -> git branch
+
+To rename branch
+
+ -> git branch -M <new branch name>
+
+To create the new branch 
+
+ -> git checkout -b <branch name>
+
+To switch to another branch 
+
+ -> git checkout <branch name>
+
+To delete branch 
+
+ -> git branch -d <branch name>
+
+
+
+
+Git merge branches ----------------->
+
+what is merge ?
+when we make any changes to the new branch and want to add that changes in to the main branch then we are going to use the merge command
+
+
+To compare the diff between the branches (You are in new branch)
+
+ -> git diff <branch name(main)>
+if its ++ then changes are in new branch not in main and if its -- then main branch having certain things that are not present in new branch
+
+To merge branch 
+
+ -> git merge <branch name>
+
+Another way to merge branches 
+
+PR(pull request)
+ 
+ so you can merge it from github also there is tab showing merege pull request use that also
+
+
+
+
+
+
+
