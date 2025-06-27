@@ -1,0 +1,49 @@
+
+# Git Commands
+
+To Tell git who am i , What is my identity for that i am using the config command 
+its having three stage i.e. --global, --local, --system
+
+ -> git config --global user.name "Dipanshu Bisen"
+ -> git config --global user.email "dipanshubisen15@gmail.com"
+
+To Check the status of git it means you have to check the user name and email then use 
+
+ -> git config --list
+
+To Clone the remote Repo into local system use following command
+
+ -> git clone "<Remote Repo HTTPS Path>"
+
+To Check the Repo is there or not use 
+
+ -> ls
+
+Go to repo
+
+ -> cd <repo name>
+
+To Check how many File are there in that repo 
+
+ -> ls -a  
+
+To check the status use 
+
+ -> git status
+
+Now Create any file that folder and add something in that file, you will the status then you will see the "unstaged file" Like this it means the it is not in git staged state 
+To Convert it to staged state use 
+
+ -> git add <File name >
+
+Now see the status you will see the Ready to commit (Commit mead make cimmitement)
+
+ -> git commit -m "message for commit"
+
+If you see the status now you will see the, its 1 commit bellow remote 
+It means your changes in local system not in remote github
+For that use 
+
+ -> git push origin main
+
+
