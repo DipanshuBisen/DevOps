@@ -157,3 +157,32 @@ If we make cahneges in same line with different branches then it will make one c
 
 
 
+Git Undoing Changes-----------> 
+
+if make certain mistake at that time we can resolve it by the some commands
+
+If you add someting and you want to undo it 
+
+ -> git reset <file name> (For one file )
+ -> git reset (For all Files)
+
+If you commit and you want to undo it one step back means back to previous commit 
+
+ -> git reset HEAD~1
+
+If you want to go back to multiple commits 
+
+ -> git reset <commit hash code >
+(Get it by "git log" command)
+
+
+
+Git Fork ------>
+
+it means we can create the rough copy of any public repository into aour account
+
+
+
+
+
+
