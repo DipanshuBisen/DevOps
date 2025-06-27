@@ -90,3 +90,13 @@ It means now onwards if you want to push anything to github no need to use "orig
 it means we are telling that we are going to use this branch only
 
 
+
+
+Git Branches -------------> 
+
+What is branches 
+When two or more person work on same project and they want to make changes at same time then they are working with branches
+
+
+
+
