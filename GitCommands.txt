@@ -97,6 +97,27 @@ Git Branches ------------->
 What is branches 
 When two or more person work on same project and they want to make changes at same time then they are working with branches
 
+To see the list of branches 
+ 
+ -> git branch
+
+To rename branch
+
+ -> git branch -M <new branch name>
+
+To create the new branch 
+
+ -> git checkout -b <branch name>
+
+To switch to another branch 
+
+ -> git checkout <branch name>
+
+To delete branch 
+
+ -> git branch -d <branch name>
+
+
 
 
 
