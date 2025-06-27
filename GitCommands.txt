@@ -120,4 +120,30 @@ To delete branch
 
 
 
+Git merge branches ----------------->
+
+what is merge ?
+when we make any changes to the new branch and want to add that changes in to the main branch then we are going to use the merge command
+
+
+To compare the diff between the branches (You are in new branch)
+
+ -> git diff <branch name(main)>
+if its ++ then changes are in new branch not in main and if its -- then main branch having certain things that are not present in new branch
+
+To merge branch 
+
+ -> git merge <branch name>
+
+Another way to merge branches 
+
+PR(pull request)
+ 
+ so you can merge it from github also there is tab showing merege pull request use that also
+
+
+
+
+
+
 
