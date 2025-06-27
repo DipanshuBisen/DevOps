@@ -47,3 +47,46 @@ For that use
  -> git push origin main
 
 
+
+Initially in github there is already Repository is there so we just clone that repo into local system and make change , add it (staged it) , commit it and then push agin to github 
+
+But now we are going to create the Repo in local System and then push that complete repo to the github
+
+For that use the "git init" command
+
+It will Initialize the git into the local repo and create the .git (hidden folder)
+
+So To Create the Repo go to ~ this path create one folder which is Repo name 
+
+ -> mkdir LocalRepo
+ -> cd LocalRepo
+
+Now it's normal folder to make the repository use command inside the folder 
+ -> git init
+
+Now create any folder/File whatever you want and then add it and commit it but whatever you did totally in local system 
+To add it in github you have to create one repo in github then 
+
+ -> git remote add origin "<repo link>"
+
+To verify weather remote connection istablish or not , It will show the git repo link,use 
+
+ -> git remote -v
+
+To check the branch 
+ 
+ -> git branch
+
+By default here it is master bu in github its main so now you can use this also but already there is main so rename the branch name by 
+
+ -> git branch -M main
+
+and again use the command
+
+ -> git push origin main 
+ 	or 
+ -> git push -u orgin main 
+It means now onwards if you want to push anything to github no need to use "origin main" again and again you can directly use "git push"
+it means we are telling that we are going to use this branch only
+
+
