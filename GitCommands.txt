@@ -151,5 +151,9 @@ to pull the data from github
 
 
 
+Git Merge Conflicts------------>
+
+If we make cahneges in same line with different branches then it will make one conflict that what changes you want to continue  
+
 
 
