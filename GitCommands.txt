@@ -31,12 +31,12 @@ To check the status use
 
  -> git status
 
-Now Create any file that folder and add something in that file, you will the status then you will see the "unstaged file" Like this it means the it is not in git staged state 
+Now Create any file in that folder and add something in that file, you will see the status then you will see the "unstaged file" Like this it means the it is not in git staged state 
 To Convert it to staged state use 
 
  -> git add <File name >
 
-Now see the status you will see the Ready to commit (Commit mead make cimmitement)
+Now see the status you will see the Ready to commit (Commit means make commitement)
 
  -> git commit -m "message for commit"
 
@@ -48,7 +48,7 @@ For that use
 
 
 
-Initially in github there is already Repository is there so we just clone that repo into local system and make change , add it (staged it) , commit it and then push agin to github 
+Initially in github there is already Repository is there so we just clone that repo into local system and make change , add it (staged it) , commit it and then push again to github 
 
 But now we are going to create the Repo in local System and then push that complete repo to the github
 
@@ -77,7 +77,7 @@ To check the branch
  
  -> git branch
 
-By default here it is master bu in github its main so now you can use this also but already there is main so rename the branch name by 
+By default here it is master but in github it's main so now you can use this also but already there is main so rename the branch name by 
 
  -> git branch -M main
 
@@ -161,7 +161,7 @@ Git Undoing Changes----------->
 
 if make certain mistake at that time we can resolve it by the some commands
 
-If you add someting and you want to undo it 
+If you add something and you want to undo it 
 
  -> git reset <file name> (For one file )
  -> git reset (For all Files)
