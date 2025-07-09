@@ -1,0 +1,55 @@
+
+# Install Ansible in Control Machine(Except Windows)
+
+Intially Install Python then Ansible
+
+ -> sudo apt update
+ -> sudo apt install python3 -y
+ -> python --version
+
+Now Install Ansible
+
+ -> sudo apt-get update
+ -> sudo apt-get install software-properties-common
+ -> sudo apt-add-repository ppa:ansible/ansible $ sudo apt-get update
+ -> sudo apt-get install ansible
+
+To Check The version of ansible use 
+
+ -> ansible --version
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+Ansible.txt[+] [unix] (05:29 01/01/1970)                                                                                                                                       7,5 All
+-- INSERT --
+
+
