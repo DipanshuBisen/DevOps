@@ -105,6 +105,25 @@ and create the one yaml file and write this
         state: started
         enabled: yes"
 
+---- To run Palybook use 
+ -> ansible-playbook <file name> 
+
+---- To check weather file having certain syntax issue use 
+ -> ansible-playbok --syntax-check <file name>
+
+---- To check that in host file we have added one ip that is there or not then use 
+ -> ansible-inventory --list
+
+---- To run any thing in remote machine use "hosts" file and add the remote machine ip and in playbook use "hosts" as "all" 
+"---
+- name: doing just localhost task
+  hosts: all
+  tasks:
+  - name: just doing ping
+    ping:
+  - name: show output
+    debug: msg="Hi Dipanshu"
+"
 
 
 ~
