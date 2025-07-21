@@ -78,6 +78,35 @@ Now From Video
 To check weather ansible install or not 
 
  -> ansible localhost -m ping
+
+Go to this location /etc/ansible
+and create one folder Playbooks
+
+and create the one yaml file and write this
+
+"---
+- name: Installing the app
+  hosts: localhost
+  become: true
+
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Start and enable nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes"
+
+
+
 ~
 ~
 ~
