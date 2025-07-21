@@ -71,6 +71,13 @@ _______________
 Facts can be used for implementing conditional statements in playbook. You can find adhoc information of all your facts through the following Ad-hoc command
  -> Ansible all -m setup 
 
+
+------------------------------------------------------------------------------------------------------------------------------>
+Now From Video
+
+To check weather ansible install or not 
+
+ -> ansible localhost -m ping
 ~
 ~
 ~
