@@ -126,6 +126,22 @@ and create the one yaml file and write this
 "
 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------To copy the file to remote machine and if we override the changes it will automatically take the backup of previous file
+ 
+ -> ---
+- name: copy file to remote machine
+  hosts: all
+
+  tasks:
+  - name: copy file
+    copy:
+      src: /home/bandaru/test1.txt
+      dest: /home/bandaru
+      mode: 0777
+      backup: true
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 ~
 ~
 ~
