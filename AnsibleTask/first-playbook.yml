@@ -1,0 +1,8 @@
+---
+- name: doing just localhost task
+  hosts: all
+  tasks:
+  - name: just doing ping 
+    ping:
+  - name: show output
+    debug: msg="Hi Dipanshu"

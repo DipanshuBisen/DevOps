@@ -1,0 +1,11 @@
+---
+- name: copy file to remote machine
+  hosts: all
+
+  tasks:
+  - name: copy file 
+    copy:
+      src: /home/bandaru/test1.txt
+      dest: /home/bandaru
+      mode: 0777
+      backup: true
