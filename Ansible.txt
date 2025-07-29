@@ -1,3 +1,5 @@
+what is ansible ?
+Ansible playbooks are one of the basic components of Ansible as they record and execute Ansible’s configuration. Generally, a playbook is the primary way to automate a set of tasks that we would like to perform on a remote machine.
 
 # Install Ansible in Control Machine(Except Windows)
 
