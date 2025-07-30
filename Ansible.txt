@@ -143,7 +143,9 @@ and create the one yaml file and write this
       backup: true
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Ansible File Module:- 
+
+TO Run ansible plyabook with password required
+ -> ansible-playbook <playbook File name with .yml extention> --ask-become-pass
 
 
 
