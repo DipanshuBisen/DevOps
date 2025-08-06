@@ -100,3 +100,16 @@ Now you can able to use the internet in private instance
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
+NACL(Network Access Control List)------------------------>
+
+If My web site is hosted on any ec2 instance and that istance comes under the Subnet and any hacker sending multiple request to my website with certain IP address so i want to
+stop the request from that IP only for that use NACL
+
+So to create NACL go to the VPC dashboard and then go to Network ACLs and create the NACL and give the VPC name and create it  
+Now Go to the route table of the private subnet and select the NACL over there.
+
+Now you have to Create the  rules for that NACL , means give the ip address which you want to block amg also give the rule number less than 100 its means it check the rule based on rule number so give less than 100 because 100 allow all trafic with all IP's.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
