@@ -73,7 +73,20 @@ If we are setting any database so we need to add that database which consist the
  Step11:- Change the permission of the pem file with "chmode 400 private_key.pem"
  Step12:- there only use ssh for the private instance
   ->  ssh -i private_key.pem ubuntu@192.168.1.20(private ip of private instance)
- Step13:- Now You  can able to access the private instance 
+ Step13:- Now You  can able to access the private instance
+
+_------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+NAT gateway-------------------->
+
+In previous example we are able to access the private instanec from the public instance but we are not able to use internet over there 
+
+So for that we will create  one NAT instance by select the NAT AMI 
+
+Then Go to the private instance subnet and then go to the route table of private instance and select the instance as NAT which we have created recently 
+
+Now make change in instance means go to the action of instance NAT and stop the source and destination checkbox.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
 
