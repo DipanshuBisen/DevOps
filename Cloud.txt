@@ -110,6 +110,9 @@ Now Go to the route table of the private subnet and select the NACL over there.
 
 Now you have to Create the  rules for that NACL , means give the ip address which you want to block amg also give the rule number less than 100 its means it check the rule based on rule number so give less than 100 because 100 allow all trafic with all IP's.
 
+Note:- when you create any NACL then all traffic for inbound rule and outbound rule is blocked
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+VPC Peering------------------>
 
 
