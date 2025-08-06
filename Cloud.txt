@@ -77,7 +77,7 @@ If we are setting any database so we need to add that database which consist the
 
 _------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-NAT gateway-------------------->
+NAT instance-------------------->
 
 In previous example we are able to access the private instanec from the public instance but we are not able to use internet over there 
 
@@ -88,6 +88,15 @@ Then Go to the private instance subnet and then go to the route table of private
 Now make change in instance means go to the action of instance NAT and stop the source and destination checkbox.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
+NAT Gateway-------------------->
 
+If you create the NAT instance then you have to manage that instance personaly and if that instance go down you have to face problem , So to overcome this issue there is NAT Gateway.
+Even AWS also suggest don't use NAT instance use NAT Gateway
+
+So For that Go to VPC and create the NAT gatway and select the VPC for that and also give the Elastic IP For that (NAT gateway/Instance required Elastic IP) 
+Now select the NAT Gateway in route table of private subnet 
+
+Now you can able to use the internet in private instance 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
