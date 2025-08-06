@@ -53,3 +53,28 @@ Its a layer of Firewall, so it will allow selected ports and deny rest of ports.
 Here we can only manage allow ports not about the deny.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+Networking ----> 
+
+If we are setting any database so we need to add that database which consist the confidential info so for that use the VPC
+
+ Step1:- Create the VPC with certain CIDR(192.168.0.0/16)
+ Step2:- Create the Private and public Subnate 
+ Step3:- Creat the Internate gateway and attach it to the VPC 
+ Step4:- Create one Route table and add the private subnate on that 
+ Step5:- There is already one auto generated route table is there you will see that there is only local entries are there then add the internet gateway there so that one subnet should be in public
+ Step6:- Create the two instance with Created VPC and Provide public and private subnet to individual instances.
+ Step7:- In Private add the ping Security group(IICR IPV4)
+ Step8:- Then You can able to access the  public instance not private but you want to install the any server on private instance like database so for that you have to use bastian host (Public instance)
+ Step9:- Go to you .pem key location in windows and then open cmd and connect the public instance by ssh 
+  -> ssh -i "EC2task.pem" ubuntu@13.201.83.34
+ Step10:- Now create the one private_key.pem file and store the private key of private instance
+ Step11:- Change the permission of the pem file with "chmode 400 private_key.pem"
+ Step12:- there only use ssh for the private instance
+  ->  ssh -i private_key.pem ubuntu@192.168.1.20(private ip of private instance)
+ Step13:- Now You  can able to access the private instance 
+
+
+
+
